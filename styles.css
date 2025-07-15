@@ -139,7 +139,7 @@
   /* ---------- AUTO‑SCROLL (ping‑pong) ---------- */
   .leadership-carousel {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     animation: scroll-bounce 10s linear infinite alternate;
   }
   
@@ -191,7 +191,7 @@
   .leadership-carousel {
     display: flex;
     gap: 2rem;
-    animation: scroll-bounce 40s linear infinite alternate;
+    animation: scroll-bounce 4s linear infinite alternate;
   }
   
   /* pause on hover */
@@ -227,7 +227,7 @@
   
     .leadership-carousel {
       gap: 1rem;
-      animation: scroll-loop 25s linear infinite;
+      animation: scroll-loop 5s linear infinite;
     }
   
     /* pause on hover still works (same selector) */
@@ -242,6 +242,10 @@
   @media (max-width: 400px) {
     .leader-card  { flex: 0 0 180px; }
     .leader-photo { height: 180px; }
+    .leadership-carousel {
+      gap: 1.5rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+     }
   }
   
   
@@ -1108,6 +1112,11 @@ a {
     .hero-subtitle {
         font-size: 28px;
     }
+
+    .leadership-carousel {
+      gap: 1.5rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+     }
     
     .hero-title {
         font-size: 18px;
@@ -1129,31 +1138,50 @@ a {
     .leader-photo      { height: 180px; }
     .leader-name       { font-size: 1rem; }
     .leader-role       { font-size: .85rem; }
-    .leadership-carousel { gap: 1rem; }
+    .leadership-carousel { 
+      gap: 1rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+    
+    }
   }
   
   /* Phones & small tablets (401 – 575 px) */
   @media (max-width: 575px) and (min-width: 401px) {
     .leader-card  { flex: 0 0 200px; }
     .leader-photo { height: 200px; }
+    .leadership-carousel {
+      gap: 1.5rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+     }
   }
   
   /* Medium tablets (576 – 767 px) */
   @media (max-width: 767px) and (min-width: 576px) {
     .leader-card  { flex: 0 0 220px; }
     .leader-photo { height: 220px; }
+    .leadership-carousel {
+      gap: 1.5rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+     }
   }
   
   /* Large tablets & small laptops (768 – 991 px) */
   @media (max-width: 991px) and (min-width: 768px) {
     .leader-card  { flex: 0 0 240px; }
     .leader-photo { height: 240px; }
+    .leadership-carousel {
+      gap: 1.5rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+     }
   }
   
   /* Standard desktops (992 – 1199 px)
      – keep default 260 px card, just tighten gap a bit */
   @media (max-width: 1199px) and (min-width: 992px) {
-    .leadership-carousel { gap: 1.5rem; }
+    .leadership-carousel {
+       gap: 1.5rem; 
+       animation: scroll-bounce 4s linear infinite alternate;
+      }
   }
   
   /* Very large screens (≥ 1400 px) — widen cards slightly */
@@ -1161,4 +1189,8 @@ a {
     .leader-card  { flex: 0 0 300px; }
     .leader-photo { height: 300px; }
     .leader-name  { font-size: 1.25rem; }
+    .leadership-carousel {
+      gap: 1.5rem; 
+      animation: scroll-bounce 4s linear infinite alternate;
+     }
   }
